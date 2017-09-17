@@ -1,0 +1,1114 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "12"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "3 * 4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1.5"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "3/2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "13%5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 파이썬은  True와 False의 첫 글자가 대문자\n",
+    "# 등호는 두개를 써야지 비교연산자가 된다.\n",
+    "(1 + 4) == 3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#짝수와 홀수를 구분\n",
+    "10 % 2 == 0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "11 % 2 == 0 and 12 % 3 == 0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 상식과 직관에 의헤 동작하는 게 파이썬의 장점\n",
+    "11 % 2 == 0 or 12 % 2 == 0"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Jupyter notebook\n",
+    "프로그래밍 언어를 실행하는 기능과 문서를 작성하는 기능\n",
+    "\n",
+    "## 변수"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "8"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = 3 \n",
+    "b = 5\n",
+    "a + b "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "16"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = 3\n",
+    "b = 13\n",
+    "a + b "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 어떤 코드든 마지막 결과만 출력하도록 한다.\n",
+    "a = 3\n",
+    "a = a + 1\n",
+    "print(a)\n",
+    "\n",
+    "a = a + 2\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Hello World'"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 명령어와 변수를 구분하기 위해 \"쌍따옴표\"로 문자열을 구분한다.\n",
+    "# 파이썬의 중요한 철학은 어떤 문제를 해결하기 위해서는 한 가지 문법이면 충분하다.\n",
+    "# 파이썬은 switch case가 없다.\n",
+    "# 하나의 문제를 풀기 위해서는 하나의 문법이면 충분하다. 루비와 가장 큰 차이\n",
+    "\"Hello World\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Hello World'"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'Hello World'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\"Joeun's name\""
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 문법 상 문자열을 표현하기 위해 쌍따옴표와 홀따옴표가 존재한다.\n",
+    "\"Joeun's name\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "12"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# ---------------------------------------------------------------------------\n",
+    "# TypeError                                 Traceback (most recent call last)\n",
+    "# <ipython-input-31-d79ad31fc60d> in <module>()\n",
+    "# ----> 1 1 + '2'\n",
+    "\n",
+    "# TypeError: unsupported operand type(s) for +: 'int' and 'str'\n",
+    "# 버그의 특징은 문제의 소지가 났을만한 코드가 있을 때 \n",
+    "# 작성한 문법이 직관적이지 않고 오해의 소지가 있을 때 오류가 난다. 나중에 더 큰 문제가 날 수 있기 때문에\n",
+    "# 대부분의 경우 에러가 나지 않아 더 큰 문제가 생김\n",
+    "\n",
+    "# int => integer => 숫자(정수)\n",
+    "# str => string => 문자열(텍스트)\n",
+    "\n",
+    "a = str(1) + '2'\n",
+    "int(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 포메팅"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Joeun ate 4 bananas for 20 days'"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 변수는 클래스 때문에 소문자로만 시작한다.\n",
+    "who = \"Joeun\"\n",
+    "bananas = 4\n",
+    "days = 20\n",
+    "\"{0} ate {1} bananas for {2} days\".format(who, bananas, days)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[Accuracy] A = 0.123456789, B = 0.987654321\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "'[Accuracy] A = 0.123, B = 0.98765'"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 파이썬 소수점이 굉장히 정밀하다.\n",
+    "# 소수점이 크면 클 수록 정밀한 연산을 하기 때문에 크게 만든다.\n",
+    "# 소수점을 몇자리만 볼지 잘라쓸 때 포메팅을 사용한다.\n",
+    "\n",
+    "model_a = 0.123456789\n",
+    "model_b = 0.987654321\n",
+    "\n",
+    "print(\"[Accuracy] A = {0:}, B = {1:}\".format(model_a, model_b))\n",
+    "\"[Accuracy] A = {0:.3f}, B = {1:.5f}\".format(model_a, model_b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "# 에러를 고치는 것도 프로그래밍 중 하나다."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Hello World!'"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "message = \"Hello World!\"\n",
+    "message"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "H\n",
+      "e\n",
+      "----\n",
+      "!\n",
+      "d\n",
+      "Hell\n",
+      "ello Wo\n",
+      "llo World\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(message[0])\n",
+    "print(message[1])\n",
+    "print('----')\n",
+    "print(message[-1])\n",
+    "print(message[-2])\n",
+    "\n",
+    "print(message[0:4])\n",
+    "print(message[1:8])\n",
+    "\n",
+    "print(message[-10:11])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 특정 문자가 들어 있는 지 확인\n",
+    "print(\"H\" in message)\n",
+    "print(\"A\" in message)\n",
+    "\n",
+    "print(\"Wor\" in message)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 102,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 3, 5, 7, 9]"
+      ]
+     },
+     "execution_count": 102,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "odd = [1,3,5,7,9]\n",
+    "odd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 103,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "3\n",
+      "-----\n",
+      "9\n",
+      "7\n",
+      "[3, 5, 7, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(odd[0])\n",
+    "print(odd[1])\n",
+    "print('-----')\n",
+    "print(odd[-1])\n",
+    "print(odd[-2])\n",
+    "\n",
+    "print(odd[1:5])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 4, 6, 8, 10]"
+      ]
+     },
+     "execution_count": 104,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "even = [2,4,6,8,10]\n",
+    "even"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 4, 6, 8]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(even[0:4])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(1 in odd)\n",
+    "print(2 in odd)\n",
+    "print(3 in odd)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 3, 5, 7, 9, 11]"
+      ]
+     },
+     "execution_count": 107,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 리스트의 여러 기능 값을 담는다.\n",
+    "odd.append(11)\n",
+    "odd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 108,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]"
+      ]
+     },
+     "execution_count": 108,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "odd = odd + [13, 15, 17, 19]\n",
+    "odd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 109,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 3, 5, 7, 9, 11, -1, -1, 17, 3]"
+      ]
+     },
+     "execution_count": 109,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 중괄호는 포맷팅만 빼고 안 씀 딕셔너리나, 대괄호는 리스트 만들때, 검색할 때\n",
+    "odd[6] = -1\n",
+    "odd[7] = -1\n",
+    "\n",
+    "odd[9] = 3\n",
+    "odd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 111,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Hello', 'World!']"
+      ]
+     },
+     "execution_count": 111,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 문자열인데도 리스트가 필요, 리스트인데 문자열의 기능이 필요\n",
+    "message = \"Hello World!\"\n",
+    "message.split(\" \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 112,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Hell', ' W', 'rld!']"
+      ]
+     },
+     "execution_count": 112,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "message.split(\"o\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 115,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello World!\n",
+      "Hello,World!\n",
+      "Hello, World!\n"
+     ]
+    }
+   ],
+   "source": [
+    "words = ['Hello', 'World!']\n",
+    "print(\" \".join(words))\n",
+    "print(\",\".join(words))\n",
+    "print(\", \".join(words))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 제어문"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 119,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "아이\n"
+     ]
+    }
+   ],
+   "source": [
+    "age = 4\n",
+    "if age < 5:\n",
+    "    print(\"아이\")\n",
+    "else:\n",
+    "    print(\"어른\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 126,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "아이\n"
+     ]
+    }
+   ],
+   "source": [
+    "# elif 파이썬 개발자라면 if else를 구현할 때 if를 구현하고 else를 구현하면 if else는 자동으로 구현 된다.\n",
+    "# 파이썬은 띄어쓰기도 깐깐하다. \n",
+    "age = 3\n",
+    "if age < 5:\n",
+    "    print(\"아이\")\n",
+    "elif age < 18: \n",
+    "    print(\"학생\")\n",
+    "else:\n",
+    "    print(\"어른\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 반복문"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 143,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "apple\n",
+      "banana\n",
+      "chicken\n",
+      "wine\n",
+      "pizza\n",
+      "pineapple\n"
+     ]
+    }
+   ],
+   "source": [
+    "basket = ['apple', 'banana', 'chicken', 'wine', 'pizza', 'pineapple']\n",
+    "# 주석 command + /\n",
+    "\n",
+    "for stuff in basket:\n",
+    "     print(stuff)\n",
+    "    \n",
+    "# stuff = basket[0]    \n",
+    "# print(stuff)    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 132,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(5):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 146,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "3\n",
+      "4\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1, 10):\n",
+    "    if i == 2:\n",
+    "        continue\n",
+    "    if i == 5:\n",
+    "        break\n",
+    "        \n",
+    "    print(i)\n",
+    "    \n",
+    "print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 151,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "6\n",
+      "7\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "[2, 4, 6, 8, 12, 14]"
+      ]
+     },
+     "execution_count": 151,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "double_list = []\n",
+    "for i in range(1, 11):\n",
+    "    if i == 5:\n",
+    "        continue\n",
+    "    if i == 8:\n",
+    "        break\n",
+    "    \n",
+    "    print(i)\n",
+    "    double = i * 2\n",
+    "    double_list.append(double)\n",
+    " \n",
+    "double_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 155,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "i_list\n",
+      "[1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]\n",
+      "triple_list\n",
+      "[3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87]\n"
+     ]
+    }
+   ],
+   "source": [
+    "triple_list = []\n",
+    "i_list = []\n",
+    "for i in range(1, 31):\n",
+    "    if i % 2 == 0:\n",
+    "        continue\n",
+    "    if i == 20:\n",
+    "        break\n",
+    "        \n",
+    "    i_list.append(i)\n",
+    "    triple = i * 3\n",
+    "    triple_list.append(triple)\n",
+    "\n",
+    "\n",
+    "print('i_list')  \n",
+    "print(i_list)    \n",
+    "print('triple_list')\n",
+    "print(triple_list)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#  함수"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 163,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n",
+      "18\n",
+      "------\n",
+      "0\n",
+      "2\n",
+      "4\n",
+      "6\n",
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 반복적으로 사용 되는 코드를 한 번에 묶어서 실행하도록\n",
+    "# def로 시작 def => define\n",
+    "\n",
+    "\n",
+    "def mutiply(a, b):\n",
+    "    c = a * b\n",
+    "    return c\n",
+    "\n",
+    "print(mutiply(2, 3))\n",
+    "print(mutiply(3, 6))\n",
+    "\n",
+    "print('------')\n",
+    "\n",
+    "for i in range(5):\n",
+    "    print(mutiply(i, 2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 173,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "음수\n",
+      "0\n",
+      "양수\n"
+     ]
+    }
+   ],
+   "source": [
+    "def sign(n):\n",
+    "    if n > 0:\n",
+    "        return \"양수\"\n",
+    "    elif n < 0:\n",
+    "        return \"음수\"\n",
+    "    else:\n",
+    "        return \"0\"\n",
+    "    \n",
+    "print(sign(-1))    \n",
+    "print(sign(0))    \n",
+    "print(sign(1))    \n",
+    "\n",
+    "# print('---------')\n",
+    "# for i in range(-5, 6):\n",
+    "#     print(sign(mutiply(i, 2)))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Practice\n",
+    "\n",
+    "** 팩토리얼 **\n",
+    "\n",
+    "    * 3! = 3 x 2 x 1 = 6\n",
+    "    * 4! = 4 x 3 x 2 x 1 = 24\n",
+    "    * 5! = 5 x 4 x 3 x 2 x 1 = 120"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 177,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n",
+      "24\n",
+      "120\n"
+     ]
+    }
+   ],
+   "source": [
+    "def factorial(n):\n",
+    "    result = 1\n",
+    "    \n",
+    "    for i in range(1, n + 1):\n",
+    "        result = result * i\n",
+    "    \n",
+    "    return result\n",
+    "\n",
+    "print(factorial(3))\n",
+    "print(factorial(4))\n",
+    "print(factorial(5))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 마크다운"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 마크다운\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### a\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
