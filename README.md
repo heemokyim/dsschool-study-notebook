@@ -8,9 +8,11 @@
 
 ## 2nd Week 2017-09-10
 * Python, pandas, scikit-learn
-* Decsion Tree를 사용해 생존자를 예측
+* Decision Tree를 사용해 생존자를 예측
 
 ## 3rd Week 2017-09-17
+* [Bike Sharing Demand | Kaggle](https://www.kaggle.com/c/bike-sharing-demand)
+* RandomForest로 자전거 대여량 예측
 
 
 ```sh
