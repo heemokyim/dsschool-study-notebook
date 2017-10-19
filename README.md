@@ -1,6 +1,7 @@
-# dsschool-7th
-* ds school 7th 실습 notebook
+# dsschool
+* 입문반 7기, 중급반 2기 실습 notebook
 
+# 입문반
 
 ## 1st Week 2017-09-03
 * [Titanic: Machine Learning from Disaster | Kaggle](https://www.kaggle.com/c/titanic)
@@ -14,9 +15,20 @@
 * [Bike Sharing Demand | Kaggle](https://www.kaggle.com/c/bike-sharing-demand)
 * RandomForest로 자전거 대여량 예측
 
+# 중급반
 
+## 1st Week 2017-10-15
+* [Sentiment Analysis on Movie Reviews | Kaggle](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews) 
+* 텍스트 데이터를 처리하는 법 배우기
+* 새로운 인공지능 알고리즘인 Regression Model
+* [sklearn.feature_extraction.text.CountVectorizer — scikit-learn 0.19.0 documentation](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
+  * ngram_range
+
+
+# Requirements
 ```sh
 pip3 install scipy
+pip3 install numpy
 pip3 install pandas
 pip3 install scikit-learn
 pip3 install matplotlib
